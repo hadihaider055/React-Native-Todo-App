@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { SafeAreaView } from "react-native";
+import { View } from "react-native";
 import TodoList from "./components/TodoList";
 import TodoInput from "./components/TodoInput";
-import { Center, NativeBaseProvider,Heading } from "native-base";
+import { Center, NativeBaseProvider, Heading } from "native-base";
 
 export const App = () => {
   const [todo, setTodo] = useState([
@@ -39,15 +39,17 @@ export const App = () => {
   };
 
   return (
-    <SafeAreaView>
-    <Heading textAlign="center" marginBottom="5">Todo App</Heading>
+    <View>
+      <Heading textAlign="center" marginBottom="5">
+        Todo App
+      </Heading>
       <TodoInput addTodo={addTodo} task={task} setTask={setTask} />
       <TodoList
         todos={todo}
         handleStatusChange={handleStatusChange}
         handleDeleteTodo={handleDeleteTodo}
       />
-    </SafeAreaView>
+    </View>
   );
 };
 

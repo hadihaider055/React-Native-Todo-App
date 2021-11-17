@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { StyleSheet } from "react-native";
 import { Input, Button, Container } from "native-base";
 
@@ -22,7 +22,7 @@ const AddTodo: React.FC<type> = ({ addTodo, task, setTask }) => {
             </Button>
         </Container>
     );
-}
+};
 
 const styles = StyleSheet.create({
     container: {},

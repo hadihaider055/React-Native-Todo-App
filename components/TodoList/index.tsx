@@ -12,9 +12,9 @@ import { Entypo } from "@expo/vector-icons";
 
 interface type {
   todos: {
-    id: number,
-    task: string,
-    isCompleted: boolean,
+    id: number;
+    task: string;
+    isCompleted: boolean;
   }[];
   handleStatusChange: (id: number) => void;
   handleDeleteTodo: (id: number) => void;
@@ -69,6 +69,6 @@ const TodoList: React.FC<type> = ({
       </VStack>
     </Container>
   );
-}
+};
 
-export default TodoList
+export default TodoList;
